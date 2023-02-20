@@ -1,7 +1,5 @@
 package mejsla.bloom.filter;
 
-import java.util.HashSet;
-
 /**
  * Implementation of a Bloom filter: https://en.wikipedia.org/wiki/Bloom_filter
  * <p>
@@ -9,15 +7,12 @@ import java.util.HashSet;
  */
 public class BloomFilter {
 
-
-    HashSet<String> s = new HashSet<>();
     /**
      * Add a word element to the filter.
      * <p>
      * After this method has been called, {@link #query(String)} must return true for the added word.
      */
     public void add(String word) {
-        s.add(word);
         // TODO: Implement.
     }
 
@@ -31,7 +26,7 @@ public class BloomFilter {
      */
     public boolean query(String word) {
         // TODO: Implement.
-        return s.contains(word);
+        return true;
     }
 
 }
