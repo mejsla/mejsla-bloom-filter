@@ -6,6 +6,18 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * A simple benchmark of {@link BloomFilter}.
+ * <p>
+ * It reads in around 100k words, then validates that all these words exist in the filter.
+ * <p>
+ * Then, it reads in around 7k words not existing in the previous set, and records and prints the
+ * false positive hit ratio - the ratio between the occurrences where the bloom filter responded
+ * "possibly in set", and all words queried for (which are known to not be in the set).
+ * <p>
+ * It also records and prints the elapsed time, as a simple benchmark. Note that only runtime is
+ * benchmark here and not memory consumption.
+ */
 public class Benchmark {
 
     public static void main(String[] args) throws Exception {

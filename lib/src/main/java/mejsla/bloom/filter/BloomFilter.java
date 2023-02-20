@@ -23,6 +23,8 @@ public class BloomFilter {
      * If the element has not been added to the filter, it might return either true or (probabilistically preferable) false.
      * <p>
      * From the other direction, a query returns either "possibly in set" or "definitely not in set".
+     * <p>
+     * Run {@link Benchmark} to get feedback on the performance and false hit ratio.
      */
     public boolean query(String word) {
         // TODO: Implement.
