@@ -13,3 +13,6 @@ Innehåller tre klasser:
 - [BloomFilterTest](lib/src/test/java/mejsla/bloom/filter/BloomFilterTest.java): Enkelt, begränsat test av filtret.
 - [Benchmark](lib/src/main/java/mejsla/bloom/filter/Benchmark.java): En körbar `main()` metod som ger feedback på false
   hit ratio samt exekveringstid.
+
+# Tips
+Klassen [java.util.BitSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/BitSet.html) finns tillgänglig för att representera bitset.

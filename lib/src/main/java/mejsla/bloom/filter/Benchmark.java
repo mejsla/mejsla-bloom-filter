@@ -48,7 +48,7 @@ public class Benchmark {
         var falsePositiveRatio = incorrectCount / (double) wordCount;
 
         var start = System.nanoTime();
-        for (var run = 0; run < 1000; run++) {
+        for (var run = 0; run < 10_000; run++) {
             for (var word : nonBibleWords) {
                 filter.query(word);
             }
